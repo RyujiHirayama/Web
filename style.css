@@ -157,22 +157,13 @@ ul.language li a{
 	position: relative;
 	margin-bottom: 30px;
 }
-#YearContainer {
-	margin:0px;
-	padding: 0 0 15px;
-	line-height: 1.5;
-	list-style: none;
+table.Years {
+	border-spacing:0px 10px;
+	border: none;
+	line-height:130%;
 }
-#Year_l {
-	float: left;
-	width: 180px;
-}
-#Year_s {
-	float: left;
-	width: 120px;
-}
-#YearContents {
-	margin-bottom: 15px;
+table.imgtable, table.imgtable td {
+    border: none;
 }
 #Footer {
 	margin-top: 50px;
