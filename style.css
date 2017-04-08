@@ -11,12 +11,12 @@ Last update:
 Author:				Ryuji Hirayama
 ----------------------------------------------------------------*/
 body {
-	color: #CED1D0;
+	color: #404040;
 	/*font-family: Arial, Helvetica, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;*/
 	font-family: "Hiragino Kaku Gothic ProN", Meiryo, メイリオ, sans-serif;
-	background-color: #353640;
 	margin: 0;
 	padding: 0;
+	text-align: justify;
 }
 a:link{
 	color: #1492c6;
@@ -61,31 +61,27 @@ a:visited {
 }
 #NavigationMenu li a {
 	width:auto;
-  color:#CED1D0;
+  color:#404040;
   font-weight:bold;
   padding: 5px 0px 0px;
 	margin: 0 2px;
   text-decoration:none;
   display:block;
-  background: #353640;
-	border-bottom: 5px solid #CED1D0;
+	border-bottom: 5px solid #404040;
 }
 #NavigationMenu li a:hover {
-	background: #555;
 }
 #NavigationMenu li.current a {
 	width:auto;
-  color:#CED1D0;
+  color:#404040;
   font-weight:bold;
   padding: 5px 0px 0px;
 	margin: 0 1px;
   text-decoration:none;
   display:block;
-  background: #353640;
 	border-bottom: 5px solid #9f1d41;
 }
 #NavigationMenu li.current a:hover {
-	background: #555;
 }
 ul.language li{
 	padding: 0px 0px 5px;
@@ -94,7 +90,7 @@ ul.language li{
 	list-style: none;
 }
 ul.language li a{
-	color:#CED1D0;
+	color:#404040;
 }
 #Current {
 	position: relative;
@@ -121,7 +117,7 @@ ul.language li a{
   *zoom: 1;
 }
 .subnav ul li a {
-	color:#CED1D0;
+	color:#404040;
 	padding-top: 10px;
 	padding-right: 20px;
 	display:block;
@@ -165,6 +161,12 @@ table.Contents {
 table.Contents td{
 	vertical-align:top;
 }
+.alpha a:hover img{
+	opacity: 0.7;
+  filter: alpha(opacity=70);
+  -ms-filter: "alpha(opacity=70)";
+}
+
 #Footer {
 	margin-top: 50px;
 	width: 1200px;
@@ -185,28 +187,21 @@ table.Contents td{
   width: 11%;  /* 任意のwidth */
 }
 .footnav ul li a {
-	color:#CED1D0;
+	color:#404040;
 	text-decoration:none;
 	padding: 5px 0px 0px;
 	display:block;
-	border-bottom: 1px solid #CED1D0;
+	border-bottom: 1px solid #404040;
 	text-align: center;
 }
-.footnav ul li a:hover {
-	background: #555;
-}
+
 .footnav ul li.current a {
-	color:#CED1D0;
+	color:#404040;
 	text-decoration:none;
 	padding: 5px 0px 0px;
 	display:block;
 	border-bottom: 2px solid #9f1d41;
 }
-.footnav ul li.current a:hover {
-	background: #555;
-}
-
-
 
 #wrapper #section-home .block-cta p span{
 	display:block;
