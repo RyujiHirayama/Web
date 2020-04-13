@@ -1,5 +1,9 @@
 ﻿@charset "utf-8";
 
+html { 
+  font-size: 14px;
+}
+
 body {
 	color: #404040;
 	font-family: "Hiragino Kaku Gothic ProN", Meiryo, メイリオ, sans-serif;
@@ -23,11 +27,12 @@ body {
 span.logo {
 	font-weight:bold;
 	vertical-align:bottom;
-	font-size:1.5rem;
+	font-size:1.3em;
+	margin-left: 0.3em;
 }
 
 span.header {
-	font-size:1.75rem;
+	font-size:1.5em;
 	font-weight: bold;
 }
 
@@ -43,7 +48,7 @@ ol.achieve li {
 
 a.projectpage {
 	text-align: justify;
-	font-size:1.25rem;
+	font-size:1.25em;
 	text-decoration: none;
 	font-weight: bold;
 	color:#1492c6;
@@ -58,6 +63,6 @@ a.wikitechy {
 
 span.title {
 	color: #1492c6;
-	font-size:1.75rem;
+	font-size:1.5em;
 	font-weight: bold;
 }
