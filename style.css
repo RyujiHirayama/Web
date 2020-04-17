@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	color: #404040;
+	color: rgb(64,64,64);
 	font-family: "Hiragino Kaku Gothic ProN", Meiryo, メイリオ, sans-serif;
 }
 
@@ -75,13 +75,19 @@ div.navi-space {
 	font-size:1.25em;
 	text-decoration: none;
 	font-weight: bold;
-	color:#1492c6;
+	color:rgb(0,140,224);
 }
 
 .container.content div.title {
-	color: #1492c6;
-	font-size:1.5em;
+	color:rgb(0,140,224);
+	font-size:1.25em;
 	font-weight: bold;
+}
+
+@media (min-width: 576px) {
+	.container.content div.title {
+		font-size:1.5em;
+	}
 }
 
 .container.content img.img-fluid.teaser {
@@ -91,13 +97,13 @@ div.navi-space {
 
 .container.division {
 	font-weight:bold;
-	font-size:2em;
-	color:#1492c6;
+	font-size:1.5em;
+	color:rgb(0,140,224);
 	margin-bottom: 0.5em;
 }
 
 .container.footer {
-	border-top:1px solid #A0A0A0;
+	border-top:1px solid rgb(160,160,160);
 	text-align: right;
 	margin-bottom: 1em;
 }
