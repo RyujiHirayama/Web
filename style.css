@@ -16,7 +16,6 @@ body {
 }
 
 .navbar-dark {
-  /*background-color: #303040;*/
   background-color: rgba(24,24,48,0.90);
 }
 
@@ -53,9 +52,14 @@ div.navi-space {
 }
 
 .container.content table td.date {
-	width: 160px;
+	width: 80px;
 }
 
+@media (min-width: 576px) {
+	.container.content table td.date {
+		width: 160px;
+	}
+}
 .container.content table td.date-short {
 	width: 100px;
 }
