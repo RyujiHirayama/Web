@@ -1,7 +1,7 @@
 ﻿@charset "utf-8";
 
 html { 
-  font-size: 14px;
+	font-size: 14px;
 }
 
 body {
@@ -15,38 +15,62 @@ body {
 	margin-left: 1em;
 }
 
-.navbar-nav .dropdown-item {
+.navbar-dark {
+  /*background-color: #303040;*/
+  background-color: rgba(24,24,48,0.90);
 }
 
-.container table {
-	display: table;
-	width: 100%;
-	max-width: 100%;
-}
-
-span.logo {
+.navbar span.logo {
 	font-weight:bold;
 	vertical-align:bottom;
 	font-size:1.3em;
 	margin-left: 0.3em;
 }
 
-span.header {
-	font-size:1.5em;
-	font-weight: bold;
+div.navi-space {
+	margin-bottom:7em;
 }
 
-p.description {
+.container.content {
+	margin-bottom: 2.5em;
+}
+
+.container.content div.header {
+	font-size:1.5em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+.container.content p {
 	margin-bottom:0.5em;
 	text-align: justify;
 }
 
-ol.achieve li {
+.container.content table {
+	display: table;
+	width: 100%;
+	max-width: 100%;
+}
+
+.container.content table td.date {
+	width: 160px;
+}
+
+.container.content table td.date-short {
+	width: 100px;
+}
+
+.container.content .row.project {
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+.container.content ol li {
 	padding-bottom: 0.5em;
 	text-align: justify;
 }
 
-a.projectpage {
+.container.content a.projectpage {
 	text-align: justify;
 	font-size:1.25em;
 	text-decoration: none;
@@ -54,15 +78,33 @@ a.projectpage {
 	color:#1492c6;
 }
 
-a.wikitechy {
-    display: block;
-    position: relative;
-    top: -80px;
-    visibility: hidden;
-}
-
-span.title {
+.container.content div.title {
 	color: #1492c6;
 	font-size:1.5em;
 	font-weight: bold;
+}
+
+.container.content img.img-fluid.teaser {
+	margin-top: 1em;
+	margin-bottom: 0em;
+}
+
+.container.division {
+	font-weight:bold;
+	font-size:2em;
+	color:#1492c6;
+	margin-bottom: 0.5em;
+}
+
+.container.footer {
+	border-top:1px solid #A0A0A0;
+	text-a.container.content lign: right;
+	margin-bottom: 1em;
+}
+
+a.wikitechy {
+    display: block;
+    position: relative;
+    top: -7em;
+    visibility: hidden;
 }
