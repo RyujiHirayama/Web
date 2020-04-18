@@ -1,246 +1,127 @@
 ﻿@charset "utf-8";
 
-/*----------------------------------------------------------------
-CSS information
-
-Site URL:
-File name:		style.css
-Summary:			all styles
-Created:
-Last update:
-Author:				Ryuji Hirayama
-----------------------------------------------------------------*/
-* {
-    margin: 0px;
-    padding: 0px;
+html { 
+	font-size: 14px;
 }
 
 body {
-	color: #404040;
-	/*font-family: Arial, Helvetica, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;*/
+	color: rgb(64,64,64);
 	font-family: "Hiragino Kaku Gothic ProN", Meiryo, メイリオ, sans-serif;
-	margin: 0;
-	padding: 0;
-	text-align: justify;
-	overflow-y: scroll;
-  	width: calc(100vw - 15px);
+	overflow: scroll;
 }
 
-a:link{
-	color: #1492c6;
-}
-a:visited {
-	color: #7e4591;
-}
-
-#HeaderContainer {
-	width: 100%;
-	min-height: 100px;
-	z-index: 600;
-	background-color: #303040;
-	opacity: 0.97;
-	position: fixed;
-}
-
-#Header {
-	width: 1200px;
-	z-index: 600;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#Logo {
-	margin-top: 5px;
-	float: left;
-	padding-left: 10px;
-	width: 200px;
-}
-
-#Container {
-	position: relative;
-	width: 1200px;
-	padding-top: 110px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-
-.nav {
-	width: 800px;
-	height: 40px;
-	/*margin: 0 auto;*/
-	margin-left: 520px;
-	text-align: right;
-	display: flex;
-}
-.nav li {
-	position: relative;
-	list-style: none;
-}
-.nav li a {
-	margin-top: 25px;
-	display: block;
-	width: 160px;
-	height: 40px;
-	text-align: center;
-	color: #ffffff;
-	font-size: 120%;
-	font-weight:bold;
-	background: #303040;
-	text-decoration: none;
-	/*border-right: 1px solid #eee;*/
-	box-sizing: border-box;
-	line-height: 40px;
-
-	margin-right: 6px;
-	margin-left: 6px;
-	border-bottom: 4px solid #C0C0C0;
-}
-.nav li.current a {
-	border-bottom: 4px solid #1492c6;
-}
-
-.nav > li:hover > a {
-	color: #00c2fe;
-	border-bottom: 4px solid #ffffff;
-	/*color: orange;
-	background: #afc6e2;
-	margin-bottom: 25px;*/
-}
-.nav li ul {
-	position: absolute;
-}
-.nav li:hover > ul > li {
-	overflow: visible;
-	height: 40px;
-}
-.nav li ul li {
-	overflow: hidden;
-	height: 0;
-}
-.nav li ul li a {
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left: -40px;
-	border-bottom: 0px solid #eee;
-
-	font-size: 100%;
-	font-weight: normal;
-	width: 240px;
-	opacity: 0.95;
-}
-
-.nav li ul li:hover > a {
-	color: #00c2fe;
-}
-
-.nav li.current ul li a {
-	border-bottom: 0px solid #eee;
-}
-
-#Current {
-	position: relative;
-	font-size: 24px;
-	line-height: 10%;
-	z-index: 500;
-	margin-bottom: 60px;
-}
-#Contents {
-	width:100%;
-	z-index:400;
-	min-height: 800px;
-	line-height: 100%;
-}
-#Contents ol.achieve {
-	margin-left:30px;
-	padding: 0 0 5px;
-	line-height: 1.3;
-}
-#Contents ol.achieve li {
-	padding-top: 10px;
-	padding-bottom: 10px;
-}
-#Contents ul.list {
-	margin:0px;
-	padding: 0 0 5px;
-	line-height: 1.3;
-	list-style: none;
-}
-#Contents ul.list li {
-	margin-bottom: 15px;
-}
-#Contents h2 {
-	line-height: 1.2;
-	padding-top: 40px;
-}
-#Contents h1 {
-	color: #1492c6;
-	padding-top: 50px;
-	line-height: 2.0;
-}
-#Contents h3 {
-	font-size: 22px;
-	color: #1492c6;
-	text-align: left;
-}
-#Picture {
+.navbar-nav .nav-link {
 	font-weight: bold;
-	font-size: 32px;
-	line-height: 150%;
-	position: relative;
-	margin-bottom: 30px;
-}
-table.Contents {
-	border-spacing:0px 10px;
-	border: none;
-	line-height:1.3;
-}
-table.Contents a {
-	/*text-decoration: none;*/
+	font-size: 120%;
+	margin-left: 1em;
 }
 
-.alpha a:hover img{
+.navbar-dark {
+  background-color: rgba(24,24,48,0.90);
+}
+
+.navbar span.logo {
+	font-weight:bold;
+	vertical-align:bottom;
+	font-size:1.3em;
+	margin-left: 0.3em;
+}
+
+div.navi-space {
+	margin-bottom:7em;
+}
+
+.container.content {
+	margin-bottom: 2.5em;
+	text-align: justify;
+}
+
+.container.content div.header {
+	font-size:1.5em;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+.container.content p, .container.content ol li {
+	margin-bottom:0.5em;
+}
+
+.container.content table {
+	display: table;
+	width: 100%;
+	max-width: 100%;
+}
+
+.container.content table td.date {
+	width: 80px;
+}
+
+@media (min-width: 576px) {
+	.container.content table td.date {
+		width: 160px;
+	}
+}
+.container.content table td.date-short {
+	width: 100px;
+}
+
+.container.content .row.project {
+	margin-bottom:5px;
+	margin-top:5px;
+}
+
+.container.content a.projectpage {
+	font-size:1.25em;
+	text-decoration: none;
+	font-weight: bold;
+	color:rgb(0,140,224);
+}
+
+.container.content a.projectpage:hover {
 	opacity: 0.7;
-  filter: alpha(opacity=70);
-  -ms-filter: "alpha(opacity=70)";
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha(opacity=70)";
 }
 
-#Footer {
-	margin-top: 50px;
-	padding-bottom: 30px;
-	width: 1200px;
-	z-index:100;
+.container.content a:hover img {
+	opacity: 0.7;
+	filter: alpha(opacity=70);
+	-ms-filter: "alpha(opacity=70)";
+}
+
+.container.content div.title {
+	color:rgb(0,140,224);
+	font-size:1.25em;
+	font-weight: bold;
+}
+
+@media (min-width: 576px) {
+	.container.content div.title {
+		font-size:1.5em;
+	}
+}
+
+.container.content img.img-fluid.teaser {
+	margin-top: 1em;
+	margin-bottom: 0em;
+}
+
+.container.division {
+	font-weight:bold;
+	font-size:1.5em;
+	color:rgb(0,140,224);
+	margin-bottom: 0.5em;
+}
+
+.container.footer {
+	border-top:1px solid rgb(160,160,160);
 	text-align: right;
-	border-top: 1px solid #A0A0A0;
-	/*min-height:800px;*/
-}
-
-#wrapper #section-home .block-cta p span{
-	display:block;
-	font-size:15px;
-	line-height:84px;
-	margin-top:-25px;
-	background:url(../images/layout/block-cta_line.png) 0 -25px
+	margin-bottom: 1em;
 }
 
 a.wikitechy {
     display: block;
     position: relative;
-    top: -110px;
+    top: -7em;
     visibility: hidden;
-}
-
-.Youtube {
-	position: relative;
-	height: 0;
-	padding: 30px 0 56.25%;
-	margin-top: 20px;
-	overflow: hidden;
-}
-.Youtube iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 }
