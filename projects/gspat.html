@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Research (GS-PAT) - Ryuji Hirayama</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style.css" media="all">
+    <link rel="shortcut icon" href="../figures/Ricon.ico">
+  </head>
+  
+  <body>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../figures/logo.png" height="40" class="d-inline-block align-top" alt="HR">
+          <span class="logo">Ryuji Hirayama</span>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav4" aria-controls="navbarNav4" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav4">    
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../index.html#HOM_AM">About Me</a>
+                <a class="dropdown-item" href="../index.html#HOM_RW">Recent Work</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Profile</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../profile.html#PRO_ED">Education</a>
+                <a class="dropdown-item" href="../profile.html#PRO_WE">Work Experiences</a>
+                <a class="dropdown-item" href="../profile.html#PRO_GA">Grants and Awards</a>
+                <a class="dropdown-item" href="../profile.html#PRO_ME">Media</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item active dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../research.html#RES_MR">My research</a>
+                <a class="dropdown-item" href="../research.html#RES_RP">Research Projects</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Publication
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="../publications.html#PUB_JP">Journal Paper</a>
+                <a class="dropdown-item" href="../publications.html#PUB_CP">Conference Proceedings</a>
+                <a class="dropdown-item" href="../publications.html#PUB_NA">News Articles</a>
+                <a class="dropdown-item" href="../publications.html#PUB_PT">Patents</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="../publications.html#PUB_JDC">国内学会・研究会</a>
+                <a class="dropdown-item" href="../publications.html#PUB_JRA">解説記事</a>
+                <a class="dropdown-item" href="../publications.html#PUB_JPT">特許</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="navi-space"></div>
+
+    <div class="container content">
+      <div class="title">GS-PAT: high-speed multi-point sound-fields for phased arrays of transducers</div>
+      <p>
+        Diego Martinez Plasencia, <b>Ryuji Hirayama</b>, Roberto Montano-Murillo, and Sriram Subramanian,
+        ACM Transactions on Graphics 39, 138 (2020)
+        <a href="https://dl.acm.org/doi/10.1145/3386569.3392492" target="_blank"><b>[Paper link]</b></a>
+        and
+        ACM SIGGRAPH 2020 Technical Papers (2020)
+        <a href="https://s2020.siggraph.org/presentation/?id=papers_630&sess=sess373" target="_blank"><b>[Paper link]</b></a>.        
+      </p>
+      <img class="img-fluid teaser" src="../figures/TeaserImages_GSPAT.png" alt="GS-PAT Teaser">
+    </div>
+
+    <div class="container content">
+      <div class="header">Abstract</div>
+      <p>
+        Phased Arrays of Transducers (PATs) allow accurate control of ultrasound fields, with applications in haptics, levitation (i.e. displays) and parametric audio. However, algorithms for multi-point levitation or tactile feedback are usually limited to computing solutions in the order of hundreds of sound-fields per second, preventing the use of multiple high-speed points, a feature that can broaden the scope of applications of PATs. We present GS-PAT, a GPU multi-point phase retrieval algorithm, capable of computing 17K solutions per second for up to 32 simultaneous points in a mid-end consumer grade GPU (NVidia GTX 1660). We describe the algorithm and compare it to state of the art multi-point algorithms used for ultrasound haptics and levitation, showing similar quality of the generated sound-fields, and much higher computation rates. We then illustrate how the shift in paradigm enabled by GS-PAT (i.e. real-time control of several high-speed points) opens new applications for PAT technologies, such as in volumetric fully coloured displays, multi-point spatio-temporal tactile feedback, parametric audio and simultaneous combinations of these modalities.
+      </p>
+    </div>
+
+  <!--
+    <div class="container content">
+      <div class="header">Video</div>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Tm8JRlJ1q50" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="container content">
+      <div class="header">Media</div>
+      <table class="table table-sm">
+        <tbody>
+          <tr style="border-top: hidden">
+            <td class="date-short">2020.02</td>
+            <td>
+              <b>El Hormiguero 3.0</b> (Prime-time Spanish TV show), 
+              &ldquo;<a href="https://www.antena3.com/programas/el-hormiguero/secciones/ciencia-marron/marron-sorprende-levitacion-con-ultrasonidos_202002055e3b3a560cf2c51a166f2aac.html" target="_blank">LEVITACIÓN ACÚSTICA</a>&rdquo;.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  -->
+
+    <div class="container footer">
+      Copyright &copy; 2020 Ryuji Hirayama All Reserved
+    </div>
+  </body>
+</html>
