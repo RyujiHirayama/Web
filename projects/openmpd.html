@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Research (Photochromic Materials) - Ryuji Hirayama</title>
+    <title>Research (OpenMPD) - Ryuji Hirayama</title>
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
@@ -79,21 +79,45 @@
     <div class="navi-space"></div>
 
     <div class="container content">
-      <div class="title">Optical addressing of multi-colour photochromic material mixture for volumetric display</div>
+      <div class="title">OpenMPD: A low-level presentation engine for Multimodal Particle-based Displays</div>
       <p>
-        <b>Ryuji Hirayama</b>, Atsushi Shiraki, Makoto Naruse, Shinichiro Nakamura, Hirotaka Nakayama, Takashi Kakue, Tomoyoshi Shimobaba and Tomoyoshi Ito,
-        Scientific Reports 6, 31543 (2016)
-        <a href="http://www.nature.com/articles/srep31543" target="_blank"><b>[Paper link]</b></a>.
+        Roberto Montano-Murillo, <b>Ryuji Hirayama</b> and Diego Martinez Plasencia,
+        ACM Transactions on Graphics (2023)
+        <a href="https://dl.acm.org/doi/10.1145/3572896" target="_blank"><b>[Paper link]</b></a>.        
       </p>
-      <img class="img-fluid teaser" src="../figures/TeaserImages_Photochromic.png" alt="Photochromic Teaser">
+      <img class="img-fluid teaser" src="../figures/TeaserImages_OpenMPD.png" alt="GS-PAT Teaser">
     </div>
 
     <div class="container content">
       <div class="header">Abstract</div>
       <p>
-        This is the first study to demonstrate that colour transformations in the volume of a photochromic material (PM) are induced at the intersections of two control light channels, one controlling PM colouration and the other controlling decolouration. Thus, PM colouration is induced by position selectivity and therefore, a dynamic volumetric display may be realised using these two control lights. Moreover, a mixture of multiple PM types with different absorption properties exhibits different colours depending on the control light spectrum. Particularly, the spectrum management of the control light allows colour-selective colouration besides position selectivity. Therefore, a PM-based, full-colour volumetric display is realised. We experimentally construct a mixture of two PM types and validate the operating principles of such a volumetric display system. Our system is constructed simply by mixing multiple PM types; therefore, the display hardware structure is extremely simple and the minimum size of a volume element can be as small as the size of a molecule. Volumetric displays can provide natural three-dimensional (3D) perception; therefore, the potential uses of our system include high-definition 3D visualisation for medical applications, architectural design, human–computer interactions, advertising and entertainment.
+        Phased arrays of transducers have been quickly evolving in terms of software and hardware with applications in haptics (acoustic vibrations), display (levitation) and audio. Most recently, Multimodal Particle-based Displays (MPDs) have even demonstrated volumetric content that can be seen, heard, and felt simultaneously, without additional instrumentation. However, current software tools only support individual modalities and they do not address the integration and exploitation of the multimodal potential of MPDs. This is because there is no standardized presentation pipeline tackling the challenges related to presenting such kind of multi-modal content (e.g., multi-modal support, multi-rate synchronization at 10 KHz, visual rendering or synchronization and continuity). This paper presents OpenMPD, a low-level presentation engine that deals with these challenges and allows structured exploitation of any type of MPD content (i.e., visual, tactile, audio). We characterize OpenMPD’s performance and illustrate how it can be integrated into higher-level development tools (i.e., Unity game engine). We then illustrate its ability to enable novel presentation capabilities, such as support of multiple MPD contents, dexterous manipulations of fast-moving particles or novel swept-volume MPD content.
       </p>
-   </div>
+    </div>
+
+  <!--
+    <div class="container content">
+      <div class="header">Video</div>
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Tm8JRlJ1q50" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="container content">
+      <div class="header">Media</div>
+      <table class="table table-sm">
+        <tbody>
+          <tr style="border-top: hidden">
+            <td class="date-short">2020.02</td>
+            <td>
+              <b>El Hormiguero 3.0</b> (Prime-time Spanish TV show), 
+              &ldquo;<a href="https://www.antena3.com/programas/el-hormiguero/secciones/ciencia-marron/marron-sorprende-levitacion-con-ultrasonidos_202002055e3b3a560cf2c51a166f2aac.html" target="_blank">LEVITACIÓN ACÚSTICA</a>&rdquo;.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  -->
 
     <div class="container footer">
       Copyright &copy; 2020 Ryuji Hirayama All Reserved
