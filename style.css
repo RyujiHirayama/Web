@@ -52,6 +52,10 @@ div.navi-space {
 	max-width: 100%;
 }
 
+.container.content table tr {
+	border-bottom: 1px solid #dee2e6;
+}
+
 .container.content table td.date {
 	width: 90px;
 }
